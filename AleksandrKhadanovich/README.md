@@ -4,14 +4,17 @@ rss_reader is a Python command-line utility to print information in human-readab
 
 ## Requirements
 
-To use rss_reader lxml, bs4, requests libraries should be installed.
-rss_reader.py is on PYTHONPATH.
+To use rss_reader unpack rssparser-1.0.tar.gz, 
+and install rss_reader via setup.py. 
+
 
 ## Usage
 
 ###To run rss-reader you should enter:
+
 >python rss_reader.py "URL" or rss_reader "URL",
-where URL is valid RSS URL.
+where URL is valid RSS URL. 
+
 
 ###rss_reader provides optional arguments:
 --Limit, --version, --json, --help.
