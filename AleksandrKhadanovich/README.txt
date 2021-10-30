@@ -4,20 +4,28 @@ rss_reader is a Python command-line utility to print information in human-readab
 
 ## Requirements
 
-To use rss_reader unpack rssparser-1.0.tar.gz, 
-and install rss_reader via setup.py. 
+###To use rss_reader lxml, bs4, requests libraries should be installed.
+rss_reader.py is on PYTHONPATH.
 
 
 ## Usage
 
 ###To run rss-reader you should enter:
-
->python rss_reader.py "URL" or rss_reader "URL",
-where URL is valid RSS URL. 
-
+>python rss_reader.py "URL",
+where URL is valid RSS URL.
 
 ###rss_reader provides optional arguments:
---Limit, --version, --json, --help.
+--Limit, --version, --json, --verbose, --help, --date
+
+###--Limit : limits number of news if this parameter provided
+###--version : prints version info
+###--json : prints result at JSON in stdout
+###--verbose : Outputs verbose status messages
+###--date : Prints result for date entered
+
+###When rss-reader is run with source argument, downloaded information from rss is saved in cwd as 
+'newslog.txt' and 'newslogjson.txt' (for json output).
+
 
 ###JSON format is representation of data as a list of objects consisting of name - value pairs.
 rss_reader lets prints result as JSON in stdout.
